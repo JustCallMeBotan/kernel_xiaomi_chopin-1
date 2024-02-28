@@ -11,6 +11,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  */
+#include <linux/mutex.h>
 #include "pseudo_m4u_gz_sec.h"
 #include "pseudo_m4u_log.h"
 #include "kree/mem.h"
@@ -18,6 +19,7 @@
 #include "kree/system.h"
 #include "tz_cross/trustzone.h"
 #include "tz_cross/ta_system.h"
+
 
 #define mem_srv_name  "com.mediatek.geniezone.srv.mem"
 #define m4u_srv_name  "com.mediatek.geniezone.srv.m4u_sec_ha"
